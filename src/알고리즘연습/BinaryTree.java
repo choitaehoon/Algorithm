@@ -1,9 +1,6 @@
 package 알고리즘연습;
 
-import java.util.Random;
-
 public class BinaryTree {
-
 	static class Node {
 		int value;
 		Node left;
@@ -37,40 +34,51 @@ public class BinaryTree {
 				right.print();
 		}
 
-		public boolean contains(int value) 
+		public boolean contains(int value) {
+			if (value < this.value)
+				return left != null && left.contains(value);
+			else if (value > this.value)
+				return right != null && right.contains(value);
+			return true;
+		}
+
+		public int getLeftMostValue() 
 		{
-			if(this.value == value) //값이 있다면 true
-				return true;
-			if(left == null && right == null) //다음 노드가 없다면 false
-				return false;
-			else if(this.value < value) //값이 크면 오른쪽으로 가기
-			{
-				if(right == null) //하지만 오른쪽이 없으면 false
-					return false;
-				else	
-					return right.contains(value);
+			Node temp; //원소탐색노드
+			for(temp = this; temp.left!= null;)
+				 temp = temp.left;
+			return temp.value;
+		}
+
+		public void remove(int value, Node parent) {
+			if (value < this.value) {
+				if (left != null)
+					left.remove(value, this);
+			} else if (value > this.value) {
+				if (right != null)
+					right.remove(value, this);
+			} else {
+				if (left != null && right != null) {
+					int temp = right.getLeftMostValue();
+					this.value = temp;
+					right.remove(temp, this);
+				} else {
+					Node child = (left != null) ? left : right;
+					if (parent.left == this)
+						parent.left = child;
+					else
+						parent.right = child;
+				}
 			}
-			else //값이 작으면 왼쪽으로 가기
-			{
-				if(left == null) // 하지만 왼쪽이 비었다면 false
-					return false;
-				else
-					return left.contains(value);	
-			}
-			
 		}
 	}
 
 	public static void main(String[] args) {
-		Random random = new Random();
-		Node root = new Node(random.nextInt(20));
-		for (int i = 0; i < 15; ++i)
-			root.add(random.nextInt(20));
+		int[] a = { 5, 18, 1, 12, 7, 2, 14, 6, 9, 15 };
+		Node root = new Node(10);
+		for (int i = 0; i < a.length; ++i)
+			root.add(a[i]);
 		root.print();
 		System.out.println();
-		for (int i = 0; i < 20; ++i) {
-			int value = random.nextInt(20);
-			System.out.printf("%d %s\n", value, root.contains(value));
-		}
 	}
 }
