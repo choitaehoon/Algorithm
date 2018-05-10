@@ -13,13 +13,22 @@ public class 다트게임
             {
                 sum += (int)Math.pow(Integer.parseInt(String.valueOf(temp.charAt(i-1))),1);
             }
-            if(temp.charAt(i) == 'D')
+            else if(temp.charAt(i) == 'D')
             {
                 sum += (int)Math.pow(Integer.parseInt(String.valueOf(temp.charAt(i-1))),1);
             }
-            if(temp.charAt(i) == 'T')
+            else if(temp.charAt(i) == 'T')
             {
                 sum += (int)Math.pow(Integer.parseInt(String.valueOf(temp.charAt(i-1))),1);
+            }
+            //옵션
+            if(temp.charAt(i) == '#') //스타상 받을 경우
+            {
+
+            }
+            if(temp.charAt(i) == '#') //아차상 받을 경우
+            {
+
             }
         }
         return sum;
@@ -29,6 +38,6 @@ public class 다트게임
     public static void main(String[] args)
     {
         System.out.println(sum("1D2S0T"));
-        
+        System.out.println(sum("1S2D*3T"));
     }
 }
