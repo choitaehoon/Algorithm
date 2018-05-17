@@ -6,7 +6,7 @@ public class friends
     {
         int count =0; //없어진 갯수 세기.
         boolean check=true; //없어지는게 있는지 검사하는 변수 (만일 없어지는게 있으면 false로 지정)
-
+        int count123 = 0;
         String[][] temp = new String[answer.length][answer[0].length()];//저장 변수
         boolean[][] search = new boolean[answer.length][answer[0].length()]; //탐색 변수
 
@@ -41,21 +41,21 @@ public class friends
                         temp[i+1][j] = temp[i][j];
                         temp[i][j]="";
                     }
-
-            for(int i=0; i<answer.length; ++i)
+            //없어 졌는지 검사(안 없어 졌다면 없어질거 없다는 이야기)
+            loop:for(int i=0; i<answer.length; ++i)
             {
                 for(int j=0; j<answer[0].length(); ++j)
-                    if(temp[i][j].equals("D") || temp[i][j].equals("E"))
-                        System.out.printf(i+" "+j+" ");
-                System.out.println();
+                    if(search[i][j])
+                    {
+                        check = false; //맨마지막에 오면 없어진게 없으니까 false로 지정하여 반복 실행 x
+                        break loop;
+                    }
             }
-
 
             for(int i=0; i<answer.length; ++i) //다시 블록 없어진거 확인해야 하니까 초기화
                 for(int j=0; j<answer[0].length(); ++j)
                     search[i][j] = false;
 
-            check = false;
         }
         return count;
     }
