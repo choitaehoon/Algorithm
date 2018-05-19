@@ -34,6 +34,7 @@ public class friends
                     if(search[i][j])
                         temp[i][j] = ""; //2x2 원소 없애기
 
+
             for(int i=0; i<answer.length-1; ++i) //원소 이동
                 for(int j=0; j<answer[0].length(); ++j)
                     if(search[i+1][j])
@@ -41,6 +42,7 @@ public class friends
                         temp[i+1][j] = temp[i][j];
                         temp[i][j]="";
                     }
+
             //없어 졌는지 검사(안 없어 졌다면 없어질거 없다는 이야기)
             loop:for(int i=0; i<answer.length; ++i)
             {
@@ -55,8 +57,8 @@ public class friends
             for(int i=0; i<answer.length; ++i) //다시 블록 없어진거 확인해야 하니까 초기화
                 for(int j=0; j<answer[0].length(); ++j)
                     search[i][j] = false;
-
         }
+
         return count;
     }
 
