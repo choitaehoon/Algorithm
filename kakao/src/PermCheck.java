@@ -1,25 +1,22 @@
 public class PermCheck
 {
-    public static int check(int a[])
+    public static int check(int A[])
     {
-        long total = 0; //총합
-        long sum =0; //원소안에 들어있는 수의 합
-
-        for(int i=1; i<a.length+1; ++i)
-            total += i;
-
-        for(int i=0; i<a.length; ++i)
-            sum += a[i];
-
-        if(total == sum)
-            return 1;
-        else
-            return 0;
+        int[] counter = new int [A.length];
+        for(int i= 0; i< A.length; i++){
+            if (A[i] < 1 || A[i] > A.length)
+                return 0;
+            else if(counter[A[i]-1] == 1)
+                return 0;
+            else
+                counter[A[i]-1] = 1;
+        }
+        return 1;
     }
 
     public static void main(String[] args)
     {
-        int[] temp ={1,4,1};
+        int[] temp ={9, 5, 7, 3, 2, 7, 3, 1, 10, 8};
         System.out.println(check(temp));
     }
 }
