@@ -22,21 +22,25 @@ public class Homework
         else return null;
     }
 
-    static void sortByCountDesc(ArrayList<WordInfo> a) { //내림차순 정렬
-        for (int i = 1; i < a.size(); ++i) {
-            WordInfo value = a.get(i);
-            int j;
-            for (j = i - 1; j >= 0; --j)
-                if (a.get(j).count < value.count)
-                    a.set(j + 1, a.get(j));
-                else break;
-            a.set(j + 1, value);
-        }
+    static void sortByCount(ArrayList<WordInfo> a) { //bubble sort
+        for(int i=a.size()-1; i>0; --i)
+            for(int j=0; j<a.size()-1; ++j)
+            {
+                WordInfo value1 = a.get(j);
+                WordInfo value2 = a.get(j+1);
+
+                if(value1.getWord().compareTo(value2.getWord()) >0)
+                {
+                    a.set(j,value2);
+                    a.set(j+1,value1);
+                }
+            }
     }
 
+    // 단어 목록에서 단어를 찾는 작업을 이진 탐색으로 구현하라.
     public static int binarySearch(ArrayList<WordInfo> a,int start, int end, String search) //재귀 호출
     {
-        if(start > end) return -1;//없다면 -1
+        if(start >= end) return -1; //없다면 -1
         else //있다면
         {
             int middle = (start+end)/2;
@@ -69,9 +73,10 @@ public class Homework
                 a.add(new WordInfo(word, 1));
         }
 
-        sortByCountDesc(a);
+        sortByCount(a); //오름차순
         System.out.println(a);
-        System.out.println("e의 위치는"+binarySearch(a,0,a.size(),"e"));
+        System.out.println("a배열 위치는"+binarySearch(a,0,a.size(),"a")+"입니다.");
+        System.out.println("o배열 위치는"+binarySearch(a,0,a.size(),"o")+"입니다.");
+        System.out.println("z배열 위치는"+binarySearch(a,0,a.size(),"z")+"입니다.");
     }
 }
-//출력 결과는 e 447204 t 329775 o 314600 a 289150 i 253990 s 248989 n 243262 r 23786 h 236868 l 170019
