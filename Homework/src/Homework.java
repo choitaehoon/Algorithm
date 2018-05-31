@@ -34,9 +34,19 @@ public class Homework
         }
     }
 
-    public static void binarySearch() //재귀 호출
+    public static int binarySearch(ArrayList<WordInfo> a,int start, int end, String search) //재귀 호출
     {
-        
+        if(start > end) return -1;//없다면 -1
+        else //있다면
+        {
+            int middle = (start+end)/2;
+            if(a.get(middle).getWord().equals(search))
+                return middle;
+            else if(a.get(middle).getWord().compareTo(search) >0)
+                return binarySearch(a,start,middle,search);
+            else
+                return binarySearch(a,middle+1,end,search);
+        }
     }
 
     static WordInfo findWord(ArrayList<WordInfo> list, String word) {
@@ -61,7 +71,7 @@ public class Homework
 
         sortByCountDesc(a);
         System.out.println(a);
+        System.out.println("e의 위치는"+binarySearch(a,0,a.size(),"e"));
     }
-
 }
 //출력 결과는 e 447204 t 329775 o 314600 a 289150 i 253990 s 248989 n 243262 r 23786 h 236868 l 170019
