@@ -1,30 +1,28 @@
 import java.util.Arrays;
-import java.util.HashMap;
-import java.util.HashSet;
 
-public class MissingInteger
-{
-    public static int search(int...a)
-    {
-        int[] temp = new int[a.length]; //임시 저장 배열
-        for(int i=0; i<a.length; ++i)
-            if(a[i] <= 0) //음수인 수가 올때
-                continue;
-            else //양수인 수가 올때
-                temp[a[i]-1] = a[i];
+public class MissingInteger {
+    public static int search(int... A) {
+        boolean[] checker = new boolean[A.length + 1]; //배열 1부터 사용하기에 +1
 
-        if(temp[0] == 0) //맨처음이 0이라면 음수만 나온 경우
-             return 1;
+        for(int i = 0 ; i < A.length ; i++){
+            int value = A[i];
+            System.out.println(value);
+            if(value > 0 && value < checker.length){ //value가 음수이거나 value가 checker길이보다 크면 건너띄는 조건
+                checker[value] = true;
+            }
+        }
+        System.out.println(Arrays.toString(checker));
+        for(int i = 1 ; i < checker.length ; i++){
+            if(checker[i] == false){
+                return i;
+            }
+        }
 
-        for(int i=0; i<temp.length; ++i)
-            if(temp[i] != i+1)
-                return i+1;
-        return temp.length+1; //배열이 알맞게 들어가고 모든 수가 알맞게 다들어간 경우
+        return checker.length;
     }
 
-    public static void main(String[] args)
-    {
-        int [] a = {15,88,33,2};
+    public static void main(String[] args) {
+        int[] a = {88, 75, 1, 5};
         System.out.println(search(a));
     }
 }
