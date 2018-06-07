@@ -16,7 +16,7 @@ public class Pebble
         return true;
     }
 
-    static int 열_점수(int c, int p) throws Exception {
+    static int 열_점수(int c, int p) throws Exception { //열 반환
         switch (p) {
             case 1: return a[0][c];
             case 2: return a[1][c];
@@ -31,9 +31,9 @@ public class Pebble
         int 이전열_최고점수 = 0;
 
         for (int q = 1; q <= 4; ++q)
-            if (인접가능패턴(p, q)) {
-                int 점수 = 전체_점수(c - 1, q);
-                if (점수 > 이전열_최고점수) 이전열_최고점수 = 점수;
+            if (인접가능패턴(p, q)) { //인접가능한지 검사
+                int 점수 = 전체_점수(c - 1, q); //재귀 호출
+                if (점수 > 이전열_최고점수) 이전열_최고점수 = 점수; //최고점수 대입
             }
         return 이전열_최고점수 + 열_점수(c, p);
     }
