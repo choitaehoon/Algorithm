@@ -12,7 +12,7 @@ public class MaxThree
         if(A[A.length-2] <0 || A[A.length-3] <0) //음수일때 처리하기
             return A[0] * A[1] * A[A.length-1];
 
-        temp1 = A[A.length-1] * A[A.length-2] * A[A.length-3]; 
+        temp1 = A[A.length-1] * A[A.length-2] * A[A.length-3];
         temp2 =A[0] * A[1] * A[A.length-1];
         return temp1 < temp2 ? temp2 : temp1;
     }

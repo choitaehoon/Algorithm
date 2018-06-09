@@ -20,7 +20,7 @@ public class BinaryTree {
             }
         }
 
-        public void print() {
+        public void print() { //중위 순회
             if (left != null) left.print();
             System.out.printf("%d ", value);
             if (right != null) right.print();
@@ -38,6 +38,7 @@ public class BinaryTree {
         }
 
         public void remove(int value, Node parent) {
+            System.out.println(this.value+" "+value);
             if (value < this.value) {
                 if (left != null) left.remove(value, this);
             } else if (value > this.value) {
@@ -60,7 +61,8 @@ public class BinaryTree {
         int[] a = {5, 18, 1, 12, 7, 2, 14, 6, 9, 15};
         Node root = new Node(10);
         for (int i = 0; i < a.length; ++i) root.add(a[i]);
-        root.print();
+//        root.remove(12,root);
+        root.remove(24,null);
         System.out.println();
     }
 }
