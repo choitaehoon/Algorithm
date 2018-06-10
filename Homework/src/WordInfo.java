@@ -1,31 +1,21 @@
-public class WordInfo
-{
+public class WordInfo implements Comparable<WordInfo>{
     String word;
     int count;
 
-    public WordInfo(String word, int count) {
+    public WordInfo(String word,int count) {
         this.word = word;
         this.count = count;
     }
 
-    public String getWord() {
-        return word;
+    @Override
+    public boolean equals(Object e) {
+        WordInfo obj=(WordInfo)e;
+        if(this.word.equals(obj.word)) return true;
+        else return false;
+    }
+    @Override
+    public int compareTo(WordInfo value) {
+        return this.word.compareTo(value.word);
     }
 
-    public int getCount() {
-        return count;
-    }
-
-    public void setWord(String word) {
-        this.word = word;
-    }
-
-    public void setCount(int count) {
-        this.count = count;
-    }
-
-    public String toString()
-    {
-        return word+" "+count;
-    }
 }
