@@ -1,19 +1,31 @@
-import java.util.Arrays;
+import java.util.Scanner;
 
 public class Fibonacci
 {
-    static int [] a = new int[1000];
-    public static int solution(int n) {
-        if(a[n] != 0) return a[n];
-        if(n == 1)  return a[n] = 1;
-        if(n == 0)  return a[n] = 0;
+    static int[] tt = new int[50];
+    static int fibonacci(int n)
+    {
+        if(n == 0 ) return ++tt[0]; //종료 조건
+        else if(n == 1) return ++tt[1]; //종료 조건
         else
-            a[n] = solution (n-1) + solution(n-2);
-        return a[n] % 1234567;
+            return tt[n]=fibonacci(n-1)+fibonacci(n-2);
     }
 
+    static void empty()
+    {
+        tt[0] = 0;
+        tt[1] = 0;
+    }
     public static void main(String[] args)
     {
-        System.out.println(solution(5));
+        Scanner input = new Scanner(System.in);
+        int temp = input.nextInt();
+        for(int i=0; i<temp; ++i)
+        {
+            int temp1 = input.nextInt();
+            empty();
+            fibonacci(temp1);
+            System.out.printf("%d %d", tt[0], tt[1]);
+        }
     }
 }
