@@ -8,19 +8,25 @@ public class Z
         if(temp.length/2 < r) //1,2사분면을 찾고 있으면
         {
             if(temp.length/2 < c) //1사분면에 존재 한다면
-                sum = search(r,c);
+                sum = search(0,0,r,c,temp.length);
         }
         else //3,4분면을 찾고 있으면
         {
 
         }
-        return 0;
+        return sum;
     }
 
-    static int search(int r, int c)
+    static int search(int s, int e, int r, int c, int length) // s,e시작    r, c는 주어진 숫자
     {
-        int temp = 0; //이동한 거리를 계산해서 리턴하는 변수
-        if(r % 2 == 0) //오른쪽으로 가야하면
+        //종료 조건
+        if(s == r && e == c)
+            return 0;
+        else if((r % 2 == 0 && r % 2 == 1) && c % 2 ==0) //오른쪽으로 가야하면
+            return search(s,e,r,c+1,length)+1;
+        else if(c % 2 == 1 && r % 2 == 0) //왼쪽아래 대각선으로 가야하면
+            return search(s,e,r+1,c-1,length)+1;// 대각선 이동
+        else if(length % 2 == 0) //z 다 그리고서 이동해야 될 때
             return search()
     }
 
