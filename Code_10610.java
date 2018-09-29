@@ -6,9 +6,9 @@ import java.util.*;
 public class Code_10610
 {
     /*
-    * 1.수가 주어지면 각 경우의 수를 계산해야 한다.
-    * 2.각 경우의 수를 계산 했는데 없다면 -1 (각 경우의 수 중 0이 있다면 맨앞으로 x)
-    * 3.각 경우의 수 중 몇가지가 있다면 큰 수를 계산한다.
+    * 1. 0이 존재하는지 하고 각 수마다 더한 값이 3의 배수인지 확인한다
+    * 2. 존재 하지 않는다면 바로 -1을 출력해준다
+    * 3. 존재한다면 30배수가 존재한다는 의미로 정렬하고 뒤집은다음 StringBuilder를 사용해준다
     */
     public static void main(String[] args) throws IOException
     {
