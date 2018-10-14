@@ -1,4 +1,4 @@
-import java.io.BufferedReader;
+﻿import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
@@ -6,7 +6,7 @@ public class Code_1992
 {
     /*
      * 압축 시도할때 안나눠지면 (부터 시작, 그 구역이 압축 다되면 )로 끝낸다.
-     * 압축을 시도 하지 못할때마다 구역을 1/4로 나눈다.
+     * 압축을 시도 하지 못할때마다 구역을 1/2로 나눈다.
      */
     static int [][] array;
     static StringBuilder builder = new StringBuilder();
