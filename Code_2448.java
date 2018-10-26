@@ -42,6 +42,9 @@ public class Code_2448
             temp[x+2][y+2] = "*";
             return;
         }
+
+
+
         search(number/2, x, y);
         search(number/2, x+number/2, y-number/2);
         search(number/2, x+number/2, y+number/2);
