@@ -8,10 +8,7 @@ public class Test
 {
     public static void main(String[] args) throws IOException
     {
-        BufferedReader buffer = new BufferedReader(new InputStreamReader(System.in));
-        StringTokenizer tokenizer = new StringTokenizer(buffer.readLine()," ");
-        while (tokenizer.hasMoreTokens())
-            System.out.println(tokenizer.nextToken());
-
+        System.out.println((1/27) % 3 == 1 && (1/27) % 3 == 1);
+        System.out.println((1/27) % 3 );
     }
 }
