@@ -33,6 +33,7 @@ public class Code_1780
         System.out.println(zeroSum);
         System.out.println(oneSum);
     }
+
     public static boolean same(int x, int y, int size)
     {
         for (int i=x; i< x+size; ++i)
