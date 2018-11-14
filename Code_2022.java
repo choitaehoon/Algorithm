@@ -18,8 +18,8 @@ public class Code_2022
         for (int i=0; i<10000; ++i)
         {
             double middle = (left+right) / 2.0;
-            double h1 = Math.sqrt(x*x-middle*middle);
-            double h2 = Math.sqrt(y*y-middle*middle);
+            double h1 = Math.sqrt((x*x)-(middle*middle));
+            double h2 = Math.sqrt((y*y)-(middle*middle));
             double h = (h1*h2)/(h1+h2);
             if (h < c)
                 right = middle;
