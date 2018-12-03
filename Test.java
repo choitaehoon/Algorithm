@@ -6,8 +6,13 @@ import java.util.Map;
 public class Test
 {
     public static void main(String[] args) {
-        Map<Integer,Integer> map = new HashMap<>();
-        map.put(1,1);
-        System.out.println(map.get(2) == null? "ㄴㄴ": 1);
+        for (int i=0; i<4; ++i)
+            for (int j=1; j<4; ++j)
+            {
+                if (j == 1)
+                    continue;
+                else
+                    System.out.println("gg");
+            }
     }
 }
