@@ -12,9 +12,7 @@ public class Code_6603
                 System.out.println(ans);
             return;
         }
-        System.out.println(index+"인덱스----"+ans);
         go(index+1, cnt+1, ans+a[index]+" ");
-        System.out.println(index+"중간과정----"+ans);
         go(index+1, cnt, ans);
     }
     public static void main(String[] args)
