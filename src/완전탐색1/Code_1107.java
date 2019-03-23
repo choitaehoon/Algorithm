@@ -1,3 +1,5 @@
+package 완전탐색1;
+
 import java.util.Scanner;
 
 public class Code_1107 {

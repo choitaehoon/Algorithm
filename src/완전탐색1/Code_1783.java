@@ -1,3 +1,5 @@
+package 완전탐색1;
+
 import java.io.*;
 import java.util.StringTokenizer;
 

@@ -1,4 +1,4 @@
-//import java.io.BufferedReader;
+package 완전탐색1;//import java.io.BufferedReader;
 //import java.io.IOException;
 //import java.io.InputStreamReader;
 //import java.util.Arrays;
