@@ -30,7 +30,7 @@ public class Code_1107 {
             broken[scanner.nextInt()] = true; // 버튼이 망가져 있으면 true, 아니면 false
 
         /** 100에서 n까지 숫자 버튼을 누르지 않고, +와 -만을 눌러서 이동하는 코드 */
-        int answer = Math.abs(n - 100); // n >= 100
+        int answer = Math.abs(n - 100); // givenNumber >= 100
 
         /** 이동할 채널 c를 결정한 다음, 가능하면, 버튼을 총 몇번 눌러야 하는지 */
         for (int i = 0; i <= 1000000; i++) { // 숫자 버튼으로 이동하는 채널

@@ -69,10 +69,10 @@ public class Code_1074 {
 //        BufferedReader buffer = new BufferedReader(new InputStreamReader(System.in));
 //        StringTokenizer token = new StringTokenizer(buffer.readLine());
 //
-//        int n = Integer.parseInt(token.nextToken());
+//        int givenNumber = Integer.parseInt(token.nextToken());
 //        int r = Integer.parseInt(token.nextToken());
 //        int c = Integer.parseInt(token.nextToken());
-//        int pow = (int)Math.pow(2,n); //제곱근
+//        int pow = (int)Math.pow(2,givenNumber); //제곱근
 //        arr = new int[pow][pow];
 //
 //        search(pow,r,c);
@@ -88,25 +88,25 @@ public class Code_1074 {
 ////            z(pow/2,pow/2,r,c);
 //    }
 //
-//    public static int search(int n,int r, int c) //행렬이 위치하는 그면을 찾아서 그 미만은 카운트 안하고 바로 계산 적용
+//    public static int search(int givenNumber,int r, int c) //행렬이 위치하는 그면을 찾아서 그 미만은 카운트 안하고 바로 계산 적용
 //    {
-//        if (n/2 > r && n/2  > c) //1사분면
+//        if (givenNumber/2 > r && givenNumber/2  > c) //1사분면
 //            return 0;
-//        else if (n/2 > r && n/2 <= c) //2사분면
-//            return 1*((n/2)*(n/2)-1);
-//        else if (n/2 <= r && n/2 > c) //3사분면
-//            return 2*((n/2)*(n/2))-1;
+//        else if (givenNumber/2 > r && givenNumber/2 <= c) //2사분면
+//            return 1*((givenNumber/2)*(givenNumber/2)-1);
+//        else if (givenNumber/2 <= r && givenNumber/2 > c) //3사분면
+//            return 2*((givenNumber/2)*(givenNumber/2))-1;
 //        else   //4사분면
-//            return 3*((n/2)*(n/2))-1;
+//            return 3*((givenNumber/2)*(givenNumber/2))-1;
 //    }
 //
-//    public static int temp(int n,int r, int c) // 몇사분면에 시작할지 알려주는 메소드
+//    public static int temp(int givenNumber,int r, int c) // 몇사분면에 시작할지 알려주는 메소드
 //    {
-//        if (n/2 > r && n/2  > c) //1사분면
+//        if (givenNumber/2 > r && givenNumber/2  > c) //1사분면
 //            return 1;
-//        else if (n/2 > r && n/2 <= c) //2사분면
+//        else if (givenNumber/2 > r && givenNumber/2 <= c) //2사분면
 //            return 2;
-//        else if (n/2 <= r && n/2 > c) //3사분면
+//        else if (givenNumber/2 <= r && givenNumber/2 > c) //3사분면
 //            return 3;
 //        else   //4사분면
 //            return 4;

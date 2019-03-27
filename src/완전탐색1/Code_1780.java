@@ -13,7 +13,7 @@ public class Code_1780
     /*
      * -1,0,1의 변수를 선언하고 배열에 집어 넣는 동안에 3개의 변수를 카운트 한다
      * 만일 하나만 값이 있고 다른게 없다면 그대로 출력하고 종료.
-     * 하지만 값이 세 변수가 다르다면 n/3를 해준다.
+     * 하지만 값이 세 변수가 다르다면 givenNumber/3를 해준다.
      */
     public static void main(String[] args) throws IOException
     {

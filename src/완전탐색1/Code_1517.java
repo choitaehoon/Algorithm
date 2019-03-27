@@ -49,14 +49,14 @@ public class Code_1517 {
     }
     public static void main(String args[]) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-//        int n = Integer.valueOf(br.readLine());
+//        int givenNumber = Integer.valueOf(br.readLine());
         /*
            Integer parseInt ->리턴타입이 기본 자료형 이다.
            Integer valueOf -> 리턴타입이 객체 이다.
         */
-//        int[] a = new int[n];
+//        int[] a = new int[givenNumber];
 //        String[] line = br.readLine().split(" ");
-//        for (int i=0; i<n; i++) {
+//        for (int i=0; i<givenNumber; i++) {
 //            a[i] = Integer.valueOf(line[i]);
 //        }
         int [] a = {3,2,1};
