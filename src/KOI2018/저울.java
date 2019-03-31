@@ -3,6 +3,7 @@ package KOI2018;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Arrays;
 import java.util.StringTokenizer;
 
 //다시 생각해보기
@@ -22,6 +23,7 @@ public class 저울 {
                 if (i != j)
                     array[i][j] = Integer.MAX_VALUE;
 
+                //값이 있는 곳에 1 삽입
         for (int i=0; i<pairOfThings; ++i) {
             StringTokenizer token = new StringTokenizer(buffer.readLine());
             int x = Integer.parseInt(token.nextToken());
@@ -29,15 +31,17 @@ public class 저울 {
             array[x][y] = 1;
         }
 
+
         for (int i=1; i<=givenNumber; ++i)
             for (int j=1; j<=givenNumber; ++j)
                 for (int k=1; k<=givenNumber; ++k)
-                    array[j][k] = Math.min(array[j][k], array[j][i] + array[i][k]);
+                    if (array[j][k] > array[j][i] + array[i][k])
+                        array[j][k] = array[j][i] + array[i][k];
 
-        for (int i=1; i<=givenNumber; ++i) {
+        for (int i=0; i<givenNumber; ++i) {
             sum = 0;
 
-            for (int j=1; j<=givenNumber; ++j)
+            for (int j=0; j<givenNumber; ++j)
                 if (array[i][j] == Integer.MAX_VALUE && array[j][i] == Integer.MAX_VALUE)
                     sum++;
 
