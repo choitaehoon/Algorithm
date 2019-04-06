@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class H_Index {
     public static void main(String[] args) {
-        int[] citations = {3};
+        int[] citations = {100,200,300,400,500};
         System.out.println(solution(citations));
     }
 
