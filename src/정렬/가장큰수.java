@@ -25,6 +25,6 @@ public class 가장큰수 {
         for (int i=0; i<temp.length; ++i)
              answer += temp[i];
 
-        return answer;
+        return answer.charAt(0) == '0' ? "0" : answer;
     }
 }
