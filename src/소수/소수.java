@@ -33,7 +33,6 @@ public class 소수 {
         else
             System.out.println(-1);
 
-
     }
 
     public static void mapDecimalNumber() {

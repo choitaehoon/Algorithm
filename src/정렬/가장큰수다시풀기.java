@@ -4,8 +4,8 @@ import java.util.Arrays;
 
 public class 가장큰수다시풀기 {
     public static void main(String[] args) {
-        int[] numbers = {0,0,0,2,0,0,0};
-//        int[] numbers = {3, 30, 34, 5, 9};
+//        int[] numbers = {0,0,0,2,0,0,0};
+        int[] numbers = {3, 30, 34, 5, 9};
         System.out.println(solution(numbers));
     }
 
@@ -22,4 +22,5 @@ public class 가장큰수다시풀기 {
 
         return builder.toString();
     }
+
 }
