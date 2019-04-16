@@ -1,67 +1,31 @@
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Scanner;
-
 public class Test {
-
-    static ArrayList<Integer>[] a = (ArrayList<Integer>[]) new ArrayList[10001];
-    static boolean[] visited = new boolean[10001];
-    static int[] ans = new int[10001];
-    static int cnt = 0;
-
     public static void main(String[] args) {
-        solve();
+//        int[] T = {5, 6};
+//        int[] T = {5, -2, 3, 8, 6};
+
+//        int[] T = {-5, -5, -5, -42, 6, 12};
+        int[] T = {-3, 6, -5, 3, 2, 7};
+        System.out.println(solution(T));
     }
 
-    private static void solve() {
-        Scanner sc = new Scanner(System.in);
-        StringBuilder sb = new StringBuilder();
-        int n = sc.nextInt();
-        int m = sc.nextInt();
+    public static int solution(int[] T) {
+        int start = 0;
+        int end = T.length-1;
 
-        for (int i = 1; i <= n; i++) {
-            a[i] = new ArrayList<Integer>();
+        if (T.length == 2)
+            return 1;
+
+        while (end-start != 1) {
+            if (T[start] < T[end])
+                end -= 1;
+
+            else if (T[start] > T[end])
+                start += 1;
+
+            else
+                end -= 1;
         }
 
-        for (int i = 0; i < m; i++) {
-            int v1 = sc.nextInt();
-            int v2 = sc.nextInt();
-
-            a[v1].add(v2);
-        }
-
-        int max = 0;
-        for (int i = 1; i <= n; i++) {
-            visited = new boolean[n+1];
-            dfs(i);
-        }
-
-        for (int i = 1; i <= n; i++) {
-            if (max < ans[i]) {
-                max = ans[i];
-            }
-        }
-
-        for (int i = 1; i <= n; i++) {
-            if (max == ans[i]) {
-                sb.append(i + " ");
-            }
-        }
-
-        System.out.println(sb.toString());
-    }
-
-    public static void dfs(int v) {
-        visited[v] = true;
-        System.out.println(Arrays.toString(visited));
-
-        for (int vv : a[v]) {
-            if (!visited[vv]) {
-                ans[vv]++;
-                dfs(vv);
-            }
-        }
+        return end+1;
     }
 }
-
-
