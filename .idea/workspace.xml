@@ -6,10 +6,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36a674dd-1f62-4ead-b1f1-6cf4b1609514" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/sw/D3/비밀번호.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sw/톱니바퀴.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sw/수학/골드바흐의추측.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sw/수학/최대공약수와최소공배수.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sw/연산자끼워넣기.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sw/연산자끼워넣기.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,11 +33,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sw/D3/비밀번호.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="29" column="39" lean-forward="true" selection-end-line="34" />
+            <state relative-caret-position="293">
+              <caret line="20" column="32" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/sw/수학/골드바흐의추측.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="350">
+              <caret line="26" column="75" selection-start-line="26" selection-start-column="75" selection-end-line="26" selection-end-column="75" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -61,8 +72,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/정렬/H_Index.java" />
-        <option value="$PROJECT_DIR$/src/완전탐색/모의고사.java" />
         <option value="$PROJECT_DIR$/src/해시/완주하지못한선수들.java" />
         <option value="$PROJECT_DIR$/src/해시/전화번호목록.java" />
         <option value="$PROJECT_DIR$/src/해시/위장.java" />
@@ -112,6 +121,8 @@
         <option value="$PROJECT_DIR$/src/sw/톱니바퀴.java" />
         <option value="$PROJECT_DIR$/src/sw/드래곤커브.java" />
         <option value="$PROJECT_DIR$/src/sw/D3/비밀번호.java" />
+        <option value="$PROJECT_DIR$/src/sw/수학/최대공약수와최소공배수.java" />
+        <option value="$PROJECT_DIR$/src/sw/수학/골드바흐의추측.java" />
       </list>
     </option>
   </component>
@@ -150,6 +161,13 @@
             </path>
             <path>
               <item name="Algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="sw" type="462c0819:PsiDirectoryNode" />
+              <item name="수학" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Algorithm" type="b2602c69:ProjectViewProjectNode" />
               <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
             </path>
           </expand>
@@ -166,7 +184,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555655608665" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555660274275" />
     <property name="last_opened_file_path" value="C:/vote" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -191,13 +209,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.비밀번호">
-    <configuration name="스타트와링크" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="sw.스타트와링크" />
+  <component name="RunManager" selected="Application.골드바흐의추측">
+    <configuration name="골드바흐의추측" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sw.수학.골드바흐의추측" />
       <module name="Algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="sw.*" />
+          <option name="PATTERN" value="sw.수학.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -224,6 +242,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="sw.D3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="최대공약수와최소공배수" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sw.수학.최대공약수와최소공배수" />
+      <module name="Algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sw.수학.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -1295,10 +1326,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.골드바흐의추측" />
+        <item itemvalue="Application.최대공약수와최소공배수" />
         <item itemvalue="Application.비밀번호" />
         <item itemvalue="Application.동전1" />
         <item itemvalue="Application.Test" />
-        <item itemvalue="Application.스타트와링크" />
       </list>
     </recent_temporary>
   </component>
@@ -1386,12 +1418,12 @@
       <workItem from="1555549547949" duration="12205000" />
       <workItem from="1555588541540" duration="655000" />
       <workItem from="1555592878011" duration="4000" />
-      <workItem from="1555652272083" duration="2452000" />
+      <workItem from="1555652272083" duration="7018000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="329192000" />
+    <option name="totallyTimeSpent" value="333758000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1414,8 +1446,8 @@
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32924107" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.44329897" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32842416" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.44329897" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.35640648" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1659,42 +1691,10 @@
           <properties />
           <option name="timeStamp" value="136" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/sw/D3/비밀번호.java</url>
-          <line>13</line>
-          <properties />
-          <option name="timeStamp" value="137" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/sw/D3/비밀번호.java</url>
-          <line>14</line>
-          <properties />
-          <option name="timeStamp" value="138" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/sw/D3/비밀번호.java</url>
-          <line>15</line>
-          <properties />
-          <option name="timeStamp" value="139" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/util/List.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8588">
-          <caret line="475" column="17" selection-start-line="475" selection-start-column="17" selection-end-line="475" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/큐/프린터큐.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="13" column="26" lean-forward="true" selection-end-line="69" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/큐/지나가는트럭배열로풀기.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="310">
@@ -2044,10 +2044,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/sw/수학/최대공약수와최소공배수.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="23" column="31" selection-end-line="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#144#175#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/sw/D3/비밀번호.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="29" column="39" lean-forward="true" selection-end-line="34" />
+        <state relative-caret-position="293">
+          <caret line="20" column="32" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sw/수학/골드바흐의추측.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="26" column="75" selection-start-line="26" selection-start-column="75" selection-end-line="26" selection-end-column="75" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
