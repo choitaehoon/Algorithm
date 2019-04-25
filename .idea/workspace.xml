@@ -6,8 +6,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36a674dd-1f62-4ead-b1f1-6cf4b1609514" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/브루트포스/부분합.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/깊이너비우선탐색/점프게임.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/미해결문제/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/미해결문제/소수의연속합.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/미해결문제/숨바꼭질4.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Test.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,13 +37,13 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/브루트포스/부분합.java">
+        <entry file="file://$PROJECT_DIR$/src/깊이너비우선탐색/점프게임.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="521">
-              <caret line="48" column="35" selection-start-line="48" selection-start-column="35" selection-end-line="48" selection-end-column="35" />
+            <state relative-caret-position="559">
+              <caret line="59" column="20" selection-start-line="59" selection-start-column="20" selection-end-line="59" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#144#175#0" expanded="true" />
+                <element signature="e#172#203#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -65,12 +69,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/소수/소수.java" />
-        <option value="$PROJECT_DIR$/src/정렬/단어정렬.java" />
-        <option value="$PROJECT_DIR$/src/정렬/가장큰수다시풀기.java" />
-        <option value="$PROJECT_DIR$/src/점프.java" />
-        <option value="$PROJECT_DIR$/src/깊이너비우선탐색/효율적인네트워크.java" />
-        <option value="$PROJECT_DIR$/src/naver/Main2.java" />
         <option value="$PROJECT_DIR$/src/naver/Main1.java" />
         <option value="$PROJECT_DIR$/src/naver/Main3.java" />
         <option value="$PROJECT_DIR$/src/oncoder/Main1.java" />
@@ -98,7 +96,6 @@
         <option value="$PROJECT_DIR$/src/sw/수학/최대공약수와최소공배수.java" />
         <option value="$PROJECT_DIR$/src/sw/수학/골드바흐의추측.java" />
         <option value="$PROJECT_DIR$/src/브루트포스/일곱난쟁이.java" />
-        <option value="$PROJECT_DIR$/src/Test.java" />
         <option value="$PROJECT_DIR$/src/브루트포스/날짜계산.java" />
         <option value="$PROJECT_DIR$/src/브루트포스/테트로미노.java" />
         <option value="$PROJECT_DIR$/src/브루트포스/일이삼더하기.java" />
@@ -116,14 +113,20 @@
         <option value="$PROJECT_DIR$/src/브루트포스/종이조각.java" />
         <option value="$PROJECT_DIR$/src/브루트포스/수들의합2.java" />
         <option value="$PROJECT_DIR$/src/브루트포스/부분합.java" />
+        <option value="$PROJECT_DIR$/src/브루트포스/소수의연속합.java" />
+        <option value="$PROJECT_DIR$/src/깊이너비우선탐색/숨바꼭질4.java" />
+        <option value="$PROJECT_DIR$/src/Test.java" />
+        <option value="$PROJECT_DIR$/src/미해결문제/Test.java" />
+        <option value="$PROJECT_DIR$/src/미해결문제/소수의연속합.java" />
+        <option value="$PROJECT_DIR$/src/미해결문제/숨바꼭질4.java" />
+        <option value="$PROJECT_DIR$/src/깊이너비우선탐색/점프게임.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="112" />
-    <option name="y" value="112" />
-    <option name="width" value="1153" />
-    <option name="height" value="620" />
+    <option name="x" value="-8" />
+    <option name="width" value="977" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -150,7 +153,7 @@
               <item name="Algorithm" type="b2602c69:ProjectViewProjectNode" />
               <item name="Algorithm" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="브루트포스" type="462c0819:PsiDirectoryNode" />
+              <item name="깊이너비우선탐색" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Algorithm" type="b2602c69:ProjectViewProjectNode" />
@@ -170,7 +173,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556093579697" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556191245786" />
     <property name="last_opened_file_path" value="C:/vote" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -195,26 +198,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.부분합">
-    <configuration name="리모컨" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="브루트포스.리모컨" />
+  <component name="RunManager" selected="Application.점프게임">
+    <configuration name="부분합" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="브루트포스.부분합" />
       <module name="Algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="브루트포스.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="수이어쓰기1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="브루트포스.수이어쓰기1" />
-      <module name="Algorithm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="브루트포스.*" />
+          <option name="PATTERN" value="미해결문제.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -227,7 +217,7 @@
       <module name="Algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="브루트포스.*" />
+          <option name="PATTERN" value="미해결문제.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -235,12 +225,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="부분합" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="브루트포스.부분합" />
+    <configuration name="점프게임" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="깊이너비우선탐색.점프게임" />
       <module name="Algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="브루트포스.*" />
+          <option name="PATTERN" value="깊이너비우선탐색.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -248,19 +238,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="연속부분최대합" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="연속부분최대합" />
-      <module name="Algorithm" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="스도쿠" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="브루트포스.스도쿠" />
+    <configuration name="숨바꼭질4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="미해결문제.숨바꼭질4" />
       <module name="Algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="브루트포스.*" />
+          <option name="PATTERN" value="미해결문제.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -268,67 +251,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="일로만들기" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="다이나믹프로그래밍1.일로만들기" />
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="미해결문제.Test" />
       <module name="Algorithm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="다이나믹프로그래밍1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="스택수열" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="스택.스택수열" />
-      <module name="Algorithm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="스택.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="양수개수세기" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Contest.양수개수세기" />
-      <module name="Algorithm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Contest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="쇠막대기" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="KOI2018.쇠막대기" />
-      <module name="Algorithm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="KOI2018.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="저울" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="KOI2018.저울" />
-      <module name="Algorithm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="KOI2018.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -446,6 +371,19 @@
     </configuration>
     <configuration name="다음순열" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="브루트포스.다음순열" />
+      <module name="Algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="브루트포스.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="소수의연속합" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="브루트포스.소수의연속합" />
       <module name="Algorithm" />
       <extension name="coverage">
         <pattern>
@@ -587,6 +525,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="연속부분최대합" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="연속부분최대합" />
+      <module name="Algorithm" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="연산자끼워넣기" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="sw.연산자끼워넣기" />
       <module name="Algorithm" />
@@ -710,6 +655,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="알고리즘기초.다이나믹프로그래밍1.다이나믹프로그래밍1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="스도쿠" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="브루트포스.스도쿠" />
+      <module name="Algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="브루트포스.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -847,6 +805,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="일로만들기" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="다이나믹프로그래밍1.일로만들기" />
+      <module name="Algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="다이나믹프로그래밍1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="쇠막대기" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="자료구조1.쇠막대기" />
       <module name="Algorithm" />
@@ -964,6 +935,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="정렬.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="스택수열" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="스택.스택수열" />
+      <module name="Algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="스택.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -1101,6 +1085,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="양수개수세기" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Contest.양수개수세기" />
+      <module name="Algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Contest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="세로읽기" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="KOI2018.세로읽기" />
       <module name="Algorithm" />
@@ -1220,6 +1217,19 @@
     </configuration>
     <configuration name="과자" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="KOI2018.과자" />
+      <module name="Algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="KOI2018.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="쇠막대기" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="KOI2018.쇠막대기" />
       <module name="Algorithm" />
       <extension name="coverage">
         <pattern>
@@ -1355,6 +1365,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="저울" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="KOI2018.저울" />
+      <module name="Algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="KOI2018.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="줄세우기" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="다이나믹프로그래밍1.줄세우기" />
       <module name="Algorithm" />
@@ -1474,10 +1497,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.점프게임" />
+        <item itemvalue="Application.숨바꼭질4" />
+        <item itemvalue="Application.Test" />
         <item itemvalue="Application.부분합" />
         <item itemvalue="Application.수들의합2" />
-        <item itemvalue="Application.수이어쓰기1" />
-        <item itemvalue="Application.리모컨" />
       </list>
     </recent_temporary>
   </component>
@@ -1574,12 +1598,13 @@
       <workItem from="1555920238567" duration="2431000" />
       <workItem from="1555988884788" duration="644000" />
       <workItem from="1555991405792" duration="11578000" />
-      <workItem from="1556077377057" duration="1916000" />
+      <workItem from="1556077377057" duration="9214000" />
+      <workItem from="1556175898115" duration="12141000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="384516000" />
+    <option name="totallyTimeSpent" value="403955000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1627,6 +1652,40 @@
       <window_info anchor="right" id="Theme Preview" order="9" />
       <window_info anchor="right" id="Jms Messenger" order="10" weight="0.3296" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12818792" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32842416" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.54933727" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.27540502" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.43446246" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.42857143" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32547864" />
+      <window_info anchor="bottom" id="Database Changes" order="11" />
+      <window_info anchor="bottom" id="Version Control" order="12" weight="0.32924107" />
+      <window_info anchor="bottom" id="Tail" order="13" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Key Promoter X" order="6" />
+      <window_info anchor="right" id="Database" order="7" weight="0.3296" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info anchor="right" id="Jms Messenger" order="10" weight="0.3296" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -1931,22 +1990,46 @@
           <properties />
           <option name="timeStamp" value="210" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/깊이너비우선탐색/점프게임.java</url>
+          <line>53</line>
+          <properties />
+          <option name="timeStamp" value="239" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/깊이너비우선탐색/점프게임.java</url>
+          <line>59</line>
+          <properties />
+          <option name="timeStamp" value="240" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/깊이너비우선탐색/점프게임.java</url>
+          <line>44</line>
+          <properties />
+          <option name="timeStamp" value="241" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/깊이너비우선탐색/점프게임.java</url>
+          <line>45</line>
+          <properties />
+          <option name="timeStamp" value="242" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/깊이너비우선탐색/점프게임.java</url>
+          <line>48</line>
+          <properties />
+          <option name="timeStamp" value="243" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/깊이너비우선탐색/점프게임.java</url>
+          <line>49</line>
+          <properties />
+          <option name="timeStamp" value="244" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/깊이너비우선탐색/효율적인네트워크.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="53" column="9" selection-start-line="53" selection-start-column="9" selection-end-line="53" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/naver/Main2.java" />
-    <entry file="file://$PROJECT_DIR$/src/naver/Main1.java" />
     <entry file="file://$PROJECT_DIR$/src/naver/Main3.java" />
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -2166,18 +2249,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#95#96#0" expanded="true" />
-            <element signature="e#136#137#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/브루트포스/날짜계산.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="502">
@@ -2285,6 +2356,17 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/브루트포스/종이조각.java" />
+    <entry file="file://$PROJECT_DIR$/src/브루트포스/부분합.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="38" column="34" lean-forward="true" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#144#175#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/브루트포스/수들의합2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="369">
@@ -2295,13 +2377,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/브루트포스/부분합.java">
+    <entry file="file://$PROJECT_DIR$/src/미해결문제/소수의연속합.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="521">
-          <caret line="48" column="35" selection-start-line="48" selection-start-column="35" selection-end-line="48" selection-end-column="35" />
+        <state relative-caret-position="133">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#144#175#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/미해결문제/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/미해결문제/숨바꼭질4.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#147#178#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/깊이너비우선탐색/점프게임.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="559">
+          <caret line="59" column="20" selection-start-line="59" selection-start-column="20" selection-end-line="59" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#172#203#0" expanded="true" />
           </folding>
         </state>
       </provider>
