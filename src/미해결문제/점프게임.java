@@ -44,7 +44,7 @@ public class 점프게임 {
         if (index < 0 || removeScope > index)
             return;
 
-        if (n <= index) {
+        if (n < index) {
             check = true;
             return;
         }
@@ -52,9 +52,9 @@ public class 점프게임 {
         for (int i=0; i<3; ++i){
             if (array[upDown][index] == 1 && !check)
                 if (i == 2 && upDown == 0)
-                    dfs(index+move[i],removeScope+1,upDown+1);
+                    dfs(index+move[i],removeScope+1,1);
                 else if (i == 2 && upDown == 1)
-                    dfs(index+move[i],removeScope+1,upDown-1);
+                    dfs(index+move[i],removeScope+1,0);
                 else
                     dfs(index+move[i],removeScope+1,upDown);
         }
