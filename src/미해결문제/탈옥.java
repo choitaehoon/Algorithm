@@ -10,7 +10,7 @@ import java.util.StringTokenizer;
 public class 탈옥 {
 
     static int min = Integer.MAX_VALUE;
-    static Queue<Pointer> queue = new LinkedList<>();
+    static Queue<PointerLocation> queue = new LinkedList<>();
     static String[][] array;
     static int[][] sumArray;
     static int[] xMove = {-1,1,0,0};
@@ -33,15 +33,15 @@ public class 탈옥 {
                 String[] store = buffer.readLine().split("");
                 for (int b=0; b<m; ++b) {
                     if (( (a == 0 || a == n-1 || b == 0 || b == m-1 ) && (store[b].equals("#") || store[b].equals(".")))) {
-                        queue.offer(new Pointer(a,b));
+                        queue.offer(new PointerLocation(a,b));
                     }
                     array[a][b] = store[b];
                 }
             }
 
             while (!queue.isEmpty()) {
-                Pointer pointer = queue.poll();
-                dfs(pointer.x, pointer.y, 0,0);
+                PointerLocation pointerLocation = queue.poll();
+                dfs(pointerLocation.x, pointerLocation.y, 0,0);
             }
         }
 
