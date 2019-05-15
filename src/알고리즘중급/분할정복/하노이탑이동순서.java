@@ -23,8 +23,7 @@ public class 하노이탑이동순서 {
 
         else {
             //A에서 B로
-            hanoi(
-                    num-1, start, end, middle);
+            hanoi(num-1, start, end, middle);
             builder.append(start).append(" ").append(end).append("\n");
             //B에서 C로
             hanoi(num-1, middle,start,end);
