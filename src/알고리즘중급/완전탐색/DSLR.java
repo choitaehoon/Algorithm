@@ -50,7 +50,6 @@ public class DSLR {
                 if (!check[next]) {
                     queue.offer(next);
                     check[next] = true;
-//                    dist[next] = dist[number]+1;
                     vertical[next] = 'L';
                     store[next] = number;
                 }
@@ -60,7 +59,6 @@ public class DSLR {
                 if (!check[next]) {
                     queue.offer(next);
                     check[next] = true;
-//                    dist[next] = dist[number]+1;
                     vertical[next] = 'R';
                     store[next] = number;
                 }
