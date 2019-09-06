@@ -46,20 +46,3 @@ public class 화살표그리기 {
         System.out.println(sum);
     }
 }
-class Pointer implements Comparable<Pointer>{
-    int x;
-    int y;
-
-    Pointer(int x, int y) {
-        this.x = x;
-        this.y = y;
-    }
-
-
-    @Override
-    public int compareTo(Pointer o) {
-        int r  = this.y - o.y;
-        if (r != 0) return r;
-        return this.x - o.x;
-    }
-}

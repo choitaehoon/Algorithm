@@ -8,8 +8,7 @@ public class 땅따먹기 {
     static int solution(int[][] land) {
         int[][] sum = new int[land.length][4];
 
-        for (int i=0; i<4; ++i)
-            sum[0][i] = land[0][i];
+        System.arraycopy(land[0], 0, sum[0], 0, 4);
 
         for (int i=1; i<land.length; ++i) {
             for (int j=0; j<4; ++j)
