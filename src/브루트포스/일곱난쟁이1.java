@@ -1,3 +1,5 @@
+package 브루트포스;
+
 import com.sun.org.apache.bcel.internal.generic.FieldOrMethod;
 
 import java.io.BufferedReader;
@@ -7,7 +9,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class 일곱난쟁이 {
+public class 일곱난쟁이1 {
 
     static int[] array = new int[9];
     static List<Integer> seven = new ArrayList<>();
