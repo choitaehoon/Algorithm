@@ -11,13 +11,14 @@ public class 수묶기 {
     static int[] array;
 
     public static void main(String[] args) throws IOException {
-        BufferedReader buffer = new BufferedReader(new InputStreamReader(System.in));
-        int givenNumber = Integer.parseInt(buffer.readLine());
-        array = new int[givenNumber];
+//        BufferedReader buffer = new BufferedReader(new InputStreamReader(System.in));
+//        int givenNumber = Integer.parseInt(buffer.readLine());
+//        array = new int[givenNumber];
+//
+//        for (int i=0; i<givenNumber; ++i)
+//            array[i] = Integer.parseInt(buffer.readLine());
 
-        for (int i=0; i<givenNumber; ++i)
-            array[i] = Integer.parseInt(buffer.readLine());
-
+        array = new int[]{-7,-6,-5,-4,-3};
         Arrays.sort(array);
 
         System.out.println(maximum());
