@@ -7,8 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36a674dd-1f62-4ead-b1f1-6cf4b1609514" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/분할정복/랜선자르기.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/분할정복/랜선자르기2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/분할정복/공유기설치.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/분할정복/나무자르기.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -46,22 +46,23 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/분할정복/랜선자르기.java">
+        <entry file="file://$PROJECT_DIR$/src/분할정복/나무자르기.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="864">
-              <caret line="35" column="18" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="18" />
+            <state relative-caret-position="316">
+              <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#143#167#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/분할정복/랜선자르기2.java">
+        <entry file="file://$PROJECT_DIR$/src/분할정복/공유기설치.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="107">
-              <caret line="25" column="15" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="15" />
+            <state relative-caret-position="-404">
+              <caret line="23" column="59" selection-start-line="23" selection-start-column="59" selection-end-line="23" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#143#167#0" expanded="true" />
@@ -98,8 +99,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/KOI2018/화살표그리기2.java" />
-        <option value="$PROJECT_DIR$/src/KOI2018/화살표그리기.java" />
         <option value="$PROJECT_DIR$/src/KOI2016/리조트.java" />
         <option value="$PROJECT_DIR$/src/Contest/숫자카드.java" />
         <option value="$PROJECT_DIR$/src/Contest/공유기설치.java" />
@@ -149,6 +148,8 @@
         <option value="$PROJECT_DIR$/src/분할정복/배열합치기.java" />
         <option value="$PROJECT_DIR$/src/분할정복/랜선자르기.java" />
         <option value="$PROJECT_DIR$/src/분할정복/랜선자르기2.java" />
+        <option value="$PROJECT_DIR$/src/분할정복/나무자르기.java" />
+        <option value="$PROJECT_DIR$/src/분할정복/공유기설치.java" />
       </list>
     </option>
   </component>
@@ -159,9 +160,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1787" />
-    <option name="y" value="374" />
-    <option name="width" value="1552" />
+    <option name="x" value="-8" />
+    <option name="y" value="161" />
+    <option name="width" value="1553" />
     <option name="height" value="840" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -214,7 +215,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1568685790078" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1568700785979" />
     <property name="last_opened_file_path" value="C:/naver" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -241,7 +242,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.랜선자르기2">
+  <component name="RunManager" selected="Application.공유기설치">
     <configuration name="배열합치기" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="분할정복.배열합치기" />
       <module name="Algorithm" />
@@ -257,6 +258,32 @@
     </configuration>
     <configuration name="랜선자르기2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="분할정복.랜선자르기2" />
+      <module name="Algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="분할정복.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="나무자르기" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="분할정복.나무자르기" />
+      <module name="Algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="분할정복.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="공유기설치" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="분할정복.공유기설치" />
       <module name="Algorithm" />
       <extension name="coverage">
         <pattern>
@@ -2676,25 +2703,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="대회or인턴_2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="그리디.대회or인턴_2" />
-      <module name="Algorithm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="그리디.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.공유기설치" />
+        <item itemvalue="Application.나무자르기" />
         <item itemvalue="Application.랜선자르기2" />
         <item itemvalue="Application.배열합치기" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.대회or인턴_2" />
       </list>
     </recent_temporary>
   </component>
@@ -2914,12 +2929,12 @@
       <workItem from="1568001977201" duration="44000" />
       <workItem from="1568003270629" duration="14620000" />
       <workItem from="1568348191150" duration="9000" />
-      <workItem from="1568685054389" duration="788000" />
+      <workItem from="1568685054389" duration="5368000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="929768000" />
+    <option name="totallyTimeSpent" value="934348000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2931,10 +2946,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1928" y="55" width="1936" height="1056" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5419735" visible="true" weight="0.136" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5419735" visible="true" weight="0.17114094" />
       <window_info id="Designer" order="1" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -2942,12 +2957,12 @@
       <window_info id="Favorites" order="5" sideWeight="0.4580265" side_tool="true" weight="0.17114094" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.328125" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3627232" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3622975" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.31176472" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.4341518" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.2945508" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.2935268" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.3298969" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.31516936" />
@@ -3445,24 +3460,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/util/Objects.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="97" column="32" selection-start-line="97" selection-start-column="32" selection-end-line="97" selection-end-column="32" />
-          <folding>
-            <element signature="e#2786#2787#0" expanded="true" />
-            <element signature="e#2837#2838#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/util/Stack.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="66" column="17" selection-start-line="66" selection-start-column="17" selection-end-line="66" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/util/Vector.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="205">
@@ -3873,8 +3870,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/분할정복/랜선자르기2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="25" column="15" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="15" />
+        <state relative-caret-position="-265">
+          <caret line="25" column="34" lean-forward="true" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#143#167#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/분할정복/나무자르기.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#143#167#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/분할정복/공유기설치.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-404">
+          <caret line="23" column="59" selection-start-line="23" selection-start-column="59" selection-end-line="23" selection-end-column="59" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#143#167#0" expanded="true" />
