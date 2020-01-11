@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
+import java.util.Stack;
 import java.util.StringTokenizer;
 
 //TODO 다시 풀어보기
@@ -12,6 +13,8 @@ public class 서울에서경산까지 {
     public static void main(String[] args) throws IOException {
         BufferedReader buffer = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer token1 = new StringTokenizer(buffer.readLine());
+
+        Stack<Integer> stack = new Stack<>();
 
         int circle = Integer.parseInt(token1.nextToken());
         int time = Integer.parseInt(token1.nextToken());

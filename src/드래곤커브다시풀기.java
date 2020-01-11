@@ -8,8 +8,8 @@ public class 드래곤커브다시풀기 {
 
     static boolean[][] vertext = new boolean[100][100];
     static int[][] generation = new int[4][1024];
-    static int[] moveX = {1,0,-1,0};
-    static int[] moveY = {0,-1,0,1};
+    static int[] moveX = {0,-1,0,1};
+    static int[] moveY = {1,0,-1,0};
 
     public static void main(String[] args) throws IOException {
         BufferedReader buffer = new BufferedReader(new InputStreamReader(System.in));
