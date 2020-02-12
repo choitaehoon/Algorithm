@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36a674dd-1f62-4ead-b1f1-6cf4b1609514" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/시뮬레이션/로봇청소기.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/시뮬레이션/프린터큐.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/시뮬레이션/방학숙제.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -98,7 +97,7 @@
       <recent name="C:\nexters\Algorithm\완전탐색1" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.로봇청소기">
+  <component name="RunManager" selected="Application.방학숙제">
     <configuration name="로봇청소기" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="시뮬레이션.로봇청소기" />
       <module name="Algorithm" />
@@ -125,12 +124,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="숨바꼭질2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="BFS.숨바꼭질2" />
+    <configuration name="방학숙제" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="시뮬레이션.방학숙제" />
       <module name="Algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="BFS.*" />
+          <option name="PATTERN" value="시뮬레이션.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -2708,11 +2707,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.방학숙제" />
         <item itemvalue="Application.로봇청소기" />
         <item itemvalue="Application.Test" />
         <item itemvalue="Application.프린터큐" />
         <item itemvalue="Application.톱니바퀴1" />
-        <item itemvalue="Application.숨바꼭질2" />
       </list>
     </recent_temporary>
   </component>
@@ -2964,7 +2963,7 @@
       <workItem from="1580625112054" duration="678000" />
       <workItem from="1580738161399" duration="3682000" />
       <workItem from="1580814312435" duration="4569000" />
-      <workItem from="1581502819840" duration="8111000" />
+      <workItem from="1581502819840" duration="9216000" />
     </task>
     <task id="LOCAL-00001" summary="BFS Solve">
       <created>1580974820052</created>
@@ -3048,37 +3047,37 @@
       <screen x="0" y="-1080" width="1920" height="1080" />
     </state>
     <state x="581" y="-1028" key="CommitChangelistDialog2/0.0.1792.1120/0.-1080.1920.1080@0.-1080.1920.1080" timestamp="1580974819923" />
-    <state width="1876" height="296" key="GridCell.Tab.0.bottom" timestamp="1581515535143">
-      <screen x="0" y="-1080" width="1920" height="1080" />
+    <state width="1876" height="296" key="GridCell.Tab.0.bottom" timestamp="1581520755371">
+      <screen x="0" y="-1057" width="1920" height="1057" />
     </state>
     <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1578726910593" />
-    <state width="1876" height="296" key="GridCell.Tab.0.bottom/0.0.1792.1120/0.-1080.1920.1080@0.-1080.1920.1080" timestamp="1581515535143" />
+    <state width="1876" height="296" key="GridCell.Tab.0.bottom/0.0.1792.1120/0.-1080.1920.1080@0.-1080.1920.1080" timestamp="1581520676618" />
     <state width="1748" height="296" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1581485245028" />
-    <state width="1876" height="296" key="GridCell.Tab.0.bottom/0.23.1792.1017/0.-1057.1920.1057@0.-1057.1920.1057" timestamp="1581515470694" />
+    <state width="1876" height="296" key="GridCell.Tab.0.bottom/0.23.1792.1017/0.-1057.1920.1057@0.-1057.1920.1057" timestamp="1581520755371" />
     <state width="1748" height="296" key="GridCell.Tab.0.bottom/0.23.1792.1017@0.23.1792.1017" timestamp="1581485179591" />
-    <state width="1876" height="296" key="GridCell.Tab.0.center" timestamp="1581515535142">
-      <screen x="0" y="-1080" width="1920" height="1080" />
+    <state width="1876" height="296" key="GridCell.Tab.0.center" timestamp="1581520755370">
+      <screen x="0" y="-1057" width="1920" height="1057" />
     </state>
     <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1578726910592" />
-    <state width="1876" height="296" key="GridCell.Tab.0.center/0.0.1792.1120/0.-1080.1920.1080@0.-1080.1920.1080" timestamp="1581515535142" />
+    <state width="1876" height="296" key="GridCell.Tab.0.center/0.0.1792.1120/0.-1080.1920.1080@0.-1080.1920.1080" timestamp="1581520676617" />
     <state width="1748" height="296" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1581485245027" />
-    <state width="1876" height="296" key="GridCell.Tab.0.center/0.23.1792.1017/0.-1057.1920.1057@0.-1057.1920.1057" timestamp="1581515470692" />
+    <state width="1876" height="296" key="GridCell.Tab.0.center/0.23.1792.1017/0.-1057.1920.1057@0.-1057.1920.1057" timestamp="1581520755370" />
     <state width="1748" height="296" key="GridCell.Tab.0.center/0.23.1792.1017@0.23.1792.1017" timestamp="1581485179590" />
-    <state width="1876" height="296" key="GridCell.Tab.0.left" timestamp="1581515535141">
-      <screen x="0" y="-1080" width="1920" height="1080" />
+    <state width="1876" height="296" key="GridCell.Tab.0.left" timestamp="1581520755370">
+      <screen x="0" y="-1057" width="1920" height="1057" />
     </state>
     <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1578726910592" />
-    <state width="1876" height="296" key="GridCell.Tab.0.left/0.0.1792.1120/0.-1080.1920.1080@0.-1080.1920.1080" timestamp="1581515535141" />
+    <state width="1876" height="296" key="GridCell.Tab.0.left/0.0.1792.1120/0.-1080.1920.1080@0.-1080.1920.1080" timestamp="1581520676616" />
     <state width="1748" height="296" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1581485245027" />
-    <state width="1876" height="296" key="GridCell.Tab.0.left/0.23.1792.1017/0.-1057.1920.1057@0.-1057.1920.1057" timestamp="1581515470691" />
+    <state width="1876" height="296" key="GridCell.Tab.0.left/0.23.1792.1017/0.-1057.1920.1057@0.-1057.1920.1057" timestamp="1581520755370" />
     <state width="1748" height="296" key="GridCell.Tab.0.left/0.23.1792.1017@0.23.1792.1017" timestamp="1581485179590" />
-    <state width="1876" height="296" key="GridCell.Tab.0.right" timestamp="1581515535143">
-      <screen x="0" y="-1080" width="1920" height="1080" />
+    <state width="1876" height="296" key="GridCell.Tab.0.right" timestamp="1581520755371">
+      <screen x="0" y="-1057" width="1920" height="1057" />
     </state>
     <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1578726910593" />
-    <state width="1876" height="296" key="GridCell.Tab.0.right/0.0.1792.1120/0.-1080.1920.1080@0.-1080.1920.1080" timestamp="1581515535143" />
+    <state width="1876" height="296" key="GridCell.Tab.0.right/0.0.1792.1120/0.-1080.1920.1080@0.-1080.1920.1080" timestamp="1581520676618" />
     <state width="1748" height="296" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1581485245028" />
-    <state width="1876" height="296" key="GridCell.Tab.0.right/0.23.1792.1017/0.-1057.1920.1057@0.-1057.1920.1057" timestamp="1581515470693" />
+    <state width="1876" height="296" key="GridCell.Tab.0.right/0.23.1792.1017/0.-1057.1920.1057@0.-1057.1920.1057" timestamp="1581520755371" />
     <state width="1748" height="296" key="GridCell.Tab.0.right/0.23.1792.1017@0.23.1792.1017" timestamp="1581485179591" />
     <state width="1748" height="372" key="GridCell.Tab.1.bottom" timestamp="1581233250957">
       <screen x="0" y="0" width="1792" height="1120" />
