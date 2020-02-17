@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36a674dd-1f62-4ead-b1f1-6cf4b1609514" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/문자열.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/시뮬레이션/공.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/문자열/단어공부.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/문자열/단어의개수.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/문자열/알파벳찾기.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/문자열.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/문자열/문자열.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,13 +101,13 @@
       <recent name="C:\nexters\Algorithm\완전탐색1" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.문자열">
-    <configuration name="공" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="시뮬레이션.공" />
+  <component name="RunManager" selected="Application.단어공부">
+    <configuration name="단어공부" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="문자열.단어공부" />
       <module name="Algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="시뮬레이션.*" />
+          <option name="PATTERN" value="문자열.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -113,18 +116,18 @@
       </method>
     </configuration>
     <configuration name="문자열" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="문자열" />
+      <option name="MAIN_CLASS_NAME" value="문자열.문자열" />
       <module name="Algorithm" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="카드2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="시뮬레이션.카드2" />
+    <configuration name="단어의개수" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="문자열.단어의개수" />
       <module name="Algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="시뮬레이션.*" />
+          <option name="PATTERN" value="문자열.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -132,12 +135,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="토너먼트" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="시뮬레이션.토너먼트" />
+    <configuration name="알파벳찾기" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="문자열.알파벳찾기" />
       <module name="Algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="시뮬레이션.*" />
+          <option name="PATTERN" value="문자열.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -145,15 +148,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="트럭주차" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="시뮬레이션.트럭주차" />
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test" />
       <module name="Algorithm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="시뮬레이션.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -2708,11 +2705,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.단어공부" />
+        <item itemvalue="Application.알파벳찾기" />
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.단어의개수" />
         <item itemvalue="Application.문자열" />
-        <item itemvalue="Application.공" />
-        <item itemvalue="Application.토너먼트" />
-        <item itemvalue="Application.카드2" />
-        <item itemvalue="Application.트럭주차" />
       </list>
     </recent_temporary>
   </component>
@@ -2964,7 +2961,7 @@
       <workItem from="1580625112054" duration="678000" />
       <workItem from="1580738161399" duration="3682000" />
       <workItem from="1580814312435" duration="4569000" />
-      <workItem from="1581502819840" duration="16906000" />
+      <workItem from="1581502819840" duration="20932000" />
     </task>
     <task id="LOCAL-00001" summary="BFS Solve">
       <created>1580974820052</created>
@@ -3048,38 +3045,38 @@
       <screen x="0" y="-1080" width="1920" height="1080" />
     </state>
     <state x="581" y="-1028" key="CommitChangelistDialog2/0.0.1792.1120/0.-1080.1920.1080@0.-1080.1920.1080" timestamp="1580974819923" />
-    <state width="1876" height="282" key="GridCell.Tab.0.bottom" timestamp="1581863906204">
-      <screen x="0" y="-1080" width="1920" height="1080" />
+    <state width="1748" height="282" key="GridCell.Tab.0.bottom" timestamp="1581914666690">
+      <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1578726910593" />
     <state width="1876" height="282" key="GridCell.Tab.0.bottom/0.0.1792.1120/0.-1080.1920.1080@0.-1080.1920.1080" timestamp="1581863906204" />
-    <state width="1748" height="282" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1581666051261" />
+    <state width="1748" height="282" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1581914666690" />
     <state width="1876" height="282" key="GridCell.Tab.0.bottom/0.23.1792.1017/0.-1057.1920.1057@0.-1057.1920.1057" timestamp="1581863898293" />
-    <state width="1748" height="282" key="GridCell.Tab.0.bottom/0.23.1792.1017@0.23.1792.1017" timestamp="1581666271924" />
-    <state width="1876" height="282" key="GridCell.Tab.0.center" timestamp="1581863906203">
-      <screen x="0" y="-1080" width="1920" height="1080" />
+    <state width="1748" height="282" key="GridCell.Tab.0.bottom/0.23.1792.1017@0.23.1792.1017" timestamp="1581914632666" />
+    <state width="1748" height="282" key="GridCell.Tab.0.center" timestamp="1581914666689">
+      <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1578726910592" />
     <state width="1876" height="282" key="GridCell.Tab.0.center/0.0.1792.1120/0.-1080.1920.1080@0.-1080.1920.1080" timestamp="1581863906203" />
-    <state width="1748" height="282" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1581666051260" />
+    <state width="1748" height="282" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1581914666689" />
     <state width="1876" height="282" key="GridCell.Tab.0.center/0.23.1792.1017/0.-1057.1920.1057@0.-1057.1920.1057" timestamp="1581863898291" />
-    <state width="1748" height="282" key="GridCell.Tab.0.center/0.23.1792.1017@0.23.1792.1017" timestamp="1581666271923" />
-    <state width="1876" height="282" key="GridCell.Tab.0.left" timestamp="1581863906202">
-      <screen x="0" y="-1080" width="1920" height="1080" />
+    <state width="1748" height="282" key="GridCell.Tab.0.center/0.23.1792.1017@0.23.1792.1017" timestamp="1581914632664" />
+    <state width="1748" height="282" key="GridCell.Tab.0.left" timestamp="1581914666688">
+      <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1578726910592" />
     <state width="1876" height="282" key="GridCell.Tab.0.left/0.0.1792.1120/0.-1080.1920.1080@0.-1080.1920.1080" timestamp="1581863906202" />
-    <state width="1748" height="282" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1581666051259" />
+    <state width="1748" height="282" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1581914666688" />
     <state width="1876" height="282" key="GridCell.Tab.0.left/0.23.1792.1017/0.-1057.1920.1057@0.-1057.1920.1057" timestamp="1581863898290" />
-    <state width="1748" height="282" key="GridCell.Tab.0.left/0.23.1792.1017@0.23.1792.1017" timestamp="1581666271923" />
-    <state width="1876" height="282" key="GridCell.Tab.0.right" timestamp="1581863906204">
-      <screen x="0" y="-1080" width="1920" height="1080" />
+    <state width="1748" height="282" key="GridCell.Tab.0.left/0.23.1792.1017@0.23.1792.1017" timestamp="1581914632663" />
+    <state width="1748" height="282" key="GridCell.Tab.0.right" timestamp="1581914666689">
+      <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1578726910593" />
     <state width="1876" height="282" key="GridCell.Tab.0.right/0.0.1792.1120/0.-1080.1920.1080@0.-1080.1920.1080" timestamp="1581863906204" />
-    <state width="1748" height="282" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1581666051260" />
+    <state width="1748" height="282" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1581914666689" />
     <state width="1876" height="282" key="GridCell.Tab.0.right/0.23.1792.1017/0.-1057.1920.1057@0.-1057.1920.1057" timestamp="1581863898292" />
-    <state width="1748" height="282" key="GridCell.Tab.0.right/0.23.1792.1017@0.23.1792.1017" timestamp="1581666271924" />
+    <state width="1748" height="282" key="GridCell.Tab.0.right/0.23.1792.1017@0.23.1792.1017" timestamp="1581914632665" />
     <state width="1748" height="372" key="GridCell.Tab.1.bottom" timestamp="1581233250957">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
