@@ -41,5 +41,5 @@ public class 애너그램만들기 {
     private static void printSum() {
         System.out.println(sum);
     }
-    
+
 }
