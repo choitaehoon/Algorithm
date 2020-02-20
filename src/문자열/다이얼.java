@@ -47,7 +47,7 @@ public class 다이얼 {
         for (int i=0; i<word.length(); ++i) {
             sum += map.get(word.charAt(i)) + 1;
         }
-ㄷ
+
         System.out.println(sum);
     }
 
