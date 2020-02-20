@@ -1,59 +1,66 @@
 package 문자열;
 
-import java.util.LinkedList;
-import java.util.Queue;
-
 public class 문자열압축 {
+
+    static int min = Integer.MAX_VALUE;
+    static StringBuilder builder = new StringBuilder();
+    static int len;
+    static String temp;
 
     public static void main(String[] args) {
         System.out.println(solution("aabbaccc"));
     }
 
     public static int solution(String s) {
-        for (int i=1; i<=s.length()/2; ++i) {
-            Queue<Character> queue = new LinkedList<>();
-            insertQueue(queue, s);
-            actionQueue(queue, s, i);
+        for (int i = 1; i <= s.length() / 2; ++i) {
+            temp = s.substring(0, i);
+            actionDivide(i, s);
+            System.out.println(builder);
+            min = Math.min(min, builder.toString().length());
+            builder.setLength(0);
         }
 
-        return 0;
+        return min;
     }
 
-    private static void insertQueue(Queue<Character> queue, String s) {
-        for (int i=0; i<s.length(); ++i)
-            queue.offer(s.charAt(i));
-    }
+    private static void actionDivide(int index, String s) {
 
-    private static void actionQueue(Queue<Character> queue, String s, int index) {
-        String temp = "";
+        for (int i=index; i<s.length(); ) {
+            String compareWord;
 
-        while (!queue.isEmpty()) {
-
-            for (int i=0; i<index; ++i) {
-                if (!queue.isEmpty())
-                    temp += queue.poll();
-            }
-
-            if (checkCorrect(temp, queue, index)) {
-
+            if (i + index > s.length()) {
+                compareWord = s.substring(i);
             } else {
-                temp = "";
+                compareWord = s.substring(i, i + index);
             }
 
-        }
+            actionEquals(compareWord, i, s);
 
+            i += index;
+        }
     }
 
-    private static boolean checkCorrect(String temp, Queue<Character> queue, int index) {
-        String temp2 = "";
+    private static void actionEquals(String compareWord, int index, String s) {
 
-        for (int i=0; i<index; ++i) {
-            if (!queue.isEmpty())
-                temp2 += queue.poll();
+        if (temp.equals(compareWord)) {
+            len++;
+
+            if (index >= s.length())
+                builder.append(len).append(temp);
+
+        } else {
+
+            if (len == 1)
+                builder.append(temp);
+            else if (index < s.length())
+                builder.append(len).append(temp);
+            else
+                builder.append(temp).append(compareWord);
+
+            temp = compareWord;
+            len = 1;
         }
 
-        System.out.println(temp+" "+temp2);
-        return temp.equals(temp2);
     }
 
 }
