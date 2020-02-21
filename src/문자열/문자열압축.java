@@ -2,65 +2,62 @@ package 문자열;
 
 public class 문자열압축 {
 
-    static int min = Integer.MAX_VALUE;
     static StringBuilder builder = new StringBuilder();
-    static int len;
-    static String temp;
+    static int min = Integer.MAX_VALUE;
 
     public static void main(String[] args) {
         System.out.println(solution("aabbaccc"));
     }
 
     public static int solution(String s) {
-        for (int i = 1; i <= s.length() / 2; ++i) {
-            temp = s.substring(0, i);
-            actionDivide(i, s);
-            System.out.println(builder);
+        for (int i=1; i<=s.length()/2; ++i) {
+            checkWord(i, s);
             min = Math.min(min, builder.toString().length());
+            System.out.println(builder);
             builder.setLength(0);
         }
 
-        return min;
+        return 0;
     }
 
-    private static void actionDivide(int index, String s) {
+    private static void checkWord(int index, String s) {
+        String temp =  combinationWord(0, index, s);;
+        int sum = 1;
 
-        for (int i=index; i<s.length(); ) {
-            String compareWord;
+        for (int j=0 ; j<s.length(); ) {
+            j += index;
+            String compare = combinationWord(j, index, s);
 
-            if (i + index > s.length()) {
-                compareWord = s.substring(i);
+            //같으면
+            if (temp.equals(compare)) {
+                ++sum;
+                if (s.length() -1 <= j)
+                    builder.append(sum).append(temp).append(compare);
             } else {
-                compareWord = s.substring(i, i + index);
+
+                if (sum == 1) {
+                    builder.append(temp).append(compare);
+                } else {
+                    builder.append(sum).append(temp);
+                }
+
+                temp = compare;
+                sum = 1;
             }
 
-            actionEquals(compareWord, i, s);
-
-            i += index;
         }
     }
 
-    private static void actionEquals(String compareWord, int index, String s) {
+    private static String combinationWord(int j, int index, String s){
+        String temp = "";
 
-        if (temp.equals(compareWord)) {
-            len++;
-
-            if (index >= s.length())
-                builder.append(len).append(temp);
-
-        } else {
-
-            if (len == 1)
-                builder.append(temp);
-            else if (index < s.length())
-                builder.append(len).append(temp);
-            else
-                builder.append(temp).append(compareWord);
-
-            temp = compareWord;
-            len = 1;
+        if (j + index > s.length()) {
+            temp = s.substring(j);
         }
+        else
+            temp = s.substring(j, j+index);
 
+        return temp;
     }
 
 }
