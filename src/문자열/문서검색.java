@@ -34,7 +34,7 @@ public class 문서검색 {
                 ++i;
 
         }
-a
+
         System.out.println(sum);
 
     }
