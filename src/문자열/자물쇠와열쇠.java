@@ -15,7 +15,7 @@ public class 자물쇠와열쇠 {
     }
 
     public static boolean solution(int[][] key, int[][] lock) {
-        for (int i=0; i<3; ++i) {
+        for (int i=0; i<4; ++i) {
 
             if (checkLock(key, lock)) {
                 return true;
