@@ -1,12 +1,12 @@
 package 문자열;
 
-public class 문자열압축1 {
+public class compressString {
 
     public static void main(String[] args) {
-        System.out.println(solution("aabbaccc"));
+
     }
 
-    private static int solution(String s) {
+    public int solution(String s) {
         int answer = s.length();
 
         for (int i=1; i<=s.length()/2; ++i) {
