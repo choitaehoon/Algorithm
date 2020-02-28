@@ -1,6 +1,5 @@
 package 문자열;
 
-import java.util.Arrays;
 
 public class 자물쇠와열쇠 {
 
