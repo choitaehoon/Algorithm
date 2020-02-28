@@ -1,6 +1,4 @@
-package 시뮬레이션;
-
-import java.util.Arrays;
+package kakao;
 
 public class 자물쇠와열쇠2 {
 
