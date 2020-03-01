@@ -19,7 +19,7 @@ public class 진법변환2 {
 
         while (givenNumber != 0) {
             int temp = givenNumber % notation;
-            
+
             if (temp < 10)
                 builder.append((char)(temp + 48));
             else
