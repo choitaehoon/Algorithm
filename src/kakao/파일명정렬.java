@@ -38,22 +38,20 @@ public class 파일명정렬 {
             index = 0;
         }
 
-        list.sort(new Comparator<Muzi>() {
-            @Override
-            public int compare(Muzi o1, Muzi o2) {
-                int r = o1.head.compareToIgnoreCase(o2.head);
+        list.sort( (Muzi o1, Muzi o2) -> {
+            int r = o1.head.compareToIgnoreCase(o2.head);
 
-                if (r != 0)
-                    return r;
-
-                r = o1.number - o2.number;
-                if (r != 0)
-                    return r;
-
-                r = o1.index - o2.index;
+            if (r != 0)
                 return r;
+
+            r = o1.number - o2.number;
+            if (r != 0)
+                return r;
+
+            r = o1.index - o2.index;
+            return r;
             }
-        });
+        );
 
         String[] result = new String[list.size()];
         for (int i=0; i<list.size(); ++i) {
