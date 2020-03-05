@@ -3,8 +3,7 @@ package kakao;
 import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
-
-import static java.util.stream.Collectors.toList;
+import java.util.stream.Collectors;
 
 public class 비밀지도1 {
 
@@ -14,33 +13,40 @@ public class 비밀지도1 {
 
     public static String[] solution(int n, int[] arr1, int[] arr2) {
         AtomicInteger index = new AtomicInteger();
+        String[] answer = new String[n];
 
-         List<String> list = Arrays.stream(arr1)
-                            .mapToObj(a -> {
-                                StringBuilder builder = new StringBuilder(Integer.toBinaryString(a | arr2[index.getAndIncrement()]));
-                                StringBuilder result = new StringBuilder();
+        List<String> list = Arrays.stream(arr1)
+                .mapToObj(word -> Integer.toBinaryString(word | arr2[index.getAndIncrement()]))
+                .map(word -> zeroPlus(word, n))
+                .map(비밀지도1::changeWord)
+                .collect(Collectors.toList());
 
-                                int len = n - builder.length();
-                                for (int i=0; i<len; ++i) {
-                                    builder.insert(0, "0");
-                                }
-
-                                for (int i=0; i<builder.length(); ++i) {
-                                    if (builder.charAt(i) == '1')
-                                        result.append("#");
-                                    else
-                                        result.append(" ");
-                                }
-
-                                return result.toString();
-                            })
-                            .collect(toList());
-
-         String[] answer = new String[n];
-         for (int i=0; i<list.size(); ++i) {
-             answer[i] = list.get(i);
-         }
-
+        for (int i=0; i<list.size(); ++i) {
+            answer[i] = list.get(i);
+        }
         return answer;
     }
+
+    private static String zeroPlus(String word, int n){
+        StringBuilder builder = new StringBuilder(word);
+        int len = n - word.length();
+        for (int i=0; i<len; ++i)
+            builder.insert(0, "0");
+
+        return builder.toString();
+    }
+
+    private static String changeWord(String word)  {
+
+        StringBuilder builder = new StringBuilder();
+        for (int i=0; i<word.length(); ++i) {
+            if (word.charAt(i) == '1')
+                builder.append("#");
+            else
+                builder.append(" ");
+        }
+
+        return builder.toString();
+    }
+
 }
