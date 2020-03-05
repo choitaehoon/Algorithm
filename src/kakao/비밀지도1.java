@@ -1,8 +1,10 @@
 package kakao;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.concurrent.atomic.AtomicInteger;
+
+import static java.util.stream.Collectors.toList;
 
 public class 비밀지도1 {
 
@@ -11,28 +13,33 @@ public class 비밀지도1 {
     }
 
     public static String[] solution(int n, int[] arr1, int[] arr2) {
-        String[] answer = new String[n];
+        AtomicInteger index = new AtomicInteger();
 
-        for (int i=0; i<n; ++i) {
-            int temp = arr1[i] | arr2[i];
-            StringBuilder binary = new StringBuilder(Integer.toBinaryString(temp));
-            int len = n - binary.length();
+         List<String> list = Arrays.stream(arr1)
+                            .mapToObj(a -> {
+                                StringBuilder builder = new StringBuilder(Integer.toBinaryString(a | arr2[index.getAndIncrement()]));
+                                StringBuilder result = new StringBuilder();
 
-            for (int j=0; j < len; ++j) {
-                binary.insert(0, "0");
-            }
+                                int len = n - builder.length();
+                                for (int i=0; i<len; ++i) {
+                                    builder.insert(0, "0");
+                                }
 
-            System.out.println(binary);
-            String store = "";
-            for (int j=0; j<binary.length(); ++j) {
-                if (binary.toString().charAt(j) == '1')
-                    store += "#";
-                else
-                    store += " ";
-            }
+                                for (int i=0; i<builder.length(); ++i) {
+                                    if (builder.charAt(i) == '1')
+                                        result.append("#");
+                                    else
+                                        result.append(" ");
+                                }
 
-            answer[i] = store;
-        }
+                                return result.toString();
+                            })
+                            .collect(toList());
+
+         String[] answer = new String[n];
+         for (int i=0; i<list.size(); ++i) {
+             answer[i] = list.get(i);
+         }
 
         return answer;
     }
