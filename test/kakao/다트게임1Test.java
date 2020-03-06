@@ -13,7 +13,7 @@ class 다트게임1Test {
     @ParameterizedTest
     @MethodSource("provideTest")
     public void test(String dartResult, int expected) {
-        assertEquals(다트게임1.solution(dartResult), expected);
+        assertEquals(다트게임다시풀기1.solution(dartResult), expected);
     }
 
     private static Stream<Arguments> provideTest() {
