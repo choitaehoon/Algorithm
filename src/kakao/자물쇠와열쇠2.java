@@ -1,5 +1,7 @@
 package kakao;
 
+import java.util.Arrays;
+
 public class 자물쇠와열쇠2 {
 
     public static void main(String[] args) {
@@ -45,24 +47,6 @@ public class 자물쇠와열쇠2 {
 
     }
 
-    // 키를 90도 회전시켜줄 메서드
-    static void rotate(int[][] key) {
-        int m = key.length;
-        int[][] rotated = new int[m][m];
-
-        for(int kCol = 0, rRow = 0 ; kCol < m ; kCol++, rRow++) {
-            for(int kRow = m-1 , rCol = 0 ; kRow >= 0 ; kRow--, rCol++) {
-                rotated[rRow][rCol] = key[kRow][kCol];
-            }
-        }
-
-        for(int row = 0 ; row < m ; row++) {
-            for(int col = 0 ; col < m ; col++) {
-                key[row][col] = rotated[row][col];
-            }
-        }
-    }
-
     // 키와 자물쇠를 맞춰본 결과를 반환해줄 메서드
     static int[][] merge(int[][] key, int[][] extLock, int row, int col){
         int n = extLock.length;
@@ -98,4 +82,23 @@ public class 자물쇠와열쇠2 {
 
         return true;
     }
+
+    // 키를 90도 회전시켜줄 메서드
+    static void rotate(int[][] key) {
+        int m = key.length;
+        int[][] rotated = new int[m][m];
+
+        for(int kCol = 0, rRow = 0 ; kCol < m ; kCol++, rRow++) {
+            for(int kRow = m-1 , rCol = 0 ; kRow >= 0 ; kRow--, rCol++) {
+                rotated[rRow][rCol] = key[kRow][kCol];
+            }
+        }
+
+        for(int row = 0 ; row < m ; row++) {
+            for(int col = 0 ; col < m ; col++) {
+                key[row][col] = rotated[row][col];
+            }
+        }
+    }
+
 }

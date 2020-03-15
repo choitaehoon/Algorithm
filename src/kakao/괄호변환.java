@@ -14,11 +14,11 @@ public class 괄호변환 {
         if (p.isEmpty())
             return "";
 
-        boolean isCorrect = checkP(p);
+        boolean isCorrectP = checkP(p);
         String u = p.substring(0, index);
         String v = p.substring(index);
 
-        if (isCorrect) {
+        if (isCorrectP) {
             return u + solution(v);
         }
 
