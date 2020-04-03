@@ -14,6 +14,7 @@ public class 퇴사2 {
     public static void main(String[] args) throws IOException {
         inputDayAndArray();
         dpAction();
+        System.out.println(t[day]);
     }
 
     private static void dpAction() {
@@ -23,7 +24,6 @@ public class 퇴사2 {
             t[i + 1] = Math.max(t[i + 1], t[i]);
         }
 
-        System.out.println(t[day]);
     }
 
     private static void inputDayAndArray() throws IOException {
@@ -32,7 +32,7 @@ public class 퇴사2 {
         day = Integer.parseInt(buffer.readLine());
 
         array = new int[day][2];
-        t = new int[2000];
+        t = new int[day + 50];
 
         for (int i=0; i<day; ++i) {
             StringTokenizer token =
