@@ -32,7 +32,7 @@ public class 퇴사2 {
         day = Integer.parseInt(buffer.readLine());
 
         array = new int[day][2];
-        t = new int[day + 50];
+        t = new int[2000000];
 
         for (int i=0; i<day; ++i) {
             StringTokenizer token =
