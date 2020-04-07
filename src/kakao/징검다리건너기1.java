@@ -36,7 +36,7 @@ public class 징검다리건너기1 {
                     break;
                 }
             }
-ㅈ
+
             if (isCheck) {
                 right = middle - 1;
             } else {
