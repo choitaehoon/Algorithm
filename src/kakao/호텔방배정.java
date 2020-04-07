@@ -2,7 +2,7 @@ package kakao;
 
 import java.util.*;
 
-public class 불량사용자 {
+public class 호텔방배정 {
 
     public static void main(String[] args) {
         System.out.println(Arrays.toString(
