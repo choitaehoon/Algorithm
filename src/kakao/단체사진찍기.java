@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 //solving..
-public class 캠핑 {
+public class 단체사진찍기 {
 
     static String[] dataTest = {"A", "C", "F", "J", "M", "N", "R", "T"};
     static List<String> list = new ArrayList<>();
@@ -27,33 +27,34 @@ public class 캠핑 {
             for (int z = 0; z < data.length; ++z) {
                 char left = data[z].charAt(0);
                 char right = data[z].charAt(2);
-                int compare = Math.abs(word.indexOf(left) - word.indexOf(right));
-                int fourNum = data[z].charAt(4);
+                int compare = Math.abs(word.indexOf(left) - word.indexOf(right)) - 1;
+                int fourNum = Integer.parseInt(String.valueOf(data[z].charAt(4)));
 
-                if (data[z].contains("=")) {
-                    if (compare != 1) {
-                        isCheck = false;
-                        break;
-                    }
-                } else if (data[z].contains(">")) {
-
-                    if (!(compare > fourNum + 1)) {
-                        isCheck = false;
-                        break;
+                if (data[z].charAt(3) == '=') {
+                    if (compare == 0) {
+                        continue;
                     }
 
-                } else {
+                } else if (data[z].charAt(3) == '>') {
 
                     if (compare > fourNum) {
-                        isCheck = false;
-                        break;
+                        continue;
+                    }
+
+                } else if (data[z].charAt(3) == '<'){
+                    if (compare < fourNum) {
+                        continue;
                     }
                 }
+
+                isCheck = false;
+                break;
             }
 
             if (isCheck) {
                 ++count;
             }
+
         }
 
         return count;
