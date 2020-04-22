@@ -55,7 +55,7 @@ public class 암호만들기 {
                 array[index].equals("o") || array[index].equals("u")) {
             recursive(index + 1, temp + array[index], minOne + 1, minTwo, count + 1);
         } else
-            recursive(index + 1,ㅇ temp + array[index], minOne, minTwo + 1, count + 1);
+            recursive(index + 1, temp + array[index], minOne, minTwo + 1, count + 1);
         recursive(index + 1, temp, minOne, minTwo, count);
     }
 }
