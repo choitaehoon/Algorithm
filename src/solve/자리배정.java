@@ -57,7 +57,7 @@ public class 자리배정 {
             }
 
             ++countGo;
-ㅈ
+
         }
 
     }
