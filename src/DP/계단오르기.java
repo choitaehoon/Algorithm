@@ -25,13 +25,13 @@ public class 계단오르기 {
     private static int solution() {
         int[] dpStairs = new int[givenStairs];
 
-//        if (givenStairs == 1) {
-//            return stairs[0];
-//        } else if (givenStairs == 2) {
-//            return Math.max(stairs[0] + stairs[1], stairs[1]);
-//        } else if (givenStairs == 3) {
-//            return Math.max(dpStairs[0], dpStairs[1]) + stairs[2];
-//        }
+        if (givenStairs == 1) {
+            return stairs[0];
+        } else if (givenStairs == 2) {
+            return Math.max(stairs[0] + stairs[1], stairs[1]);
+        } else if (givenStairs == 3) {
+            return Math.max(dpStairs[0], dpStairs[1]) + stairs[2];
+        }
 
         dpStairs[0] = stairs[0];
         dpStairs[1] = Math.max(stairs[0] + stairs[1], stairs[1]);
