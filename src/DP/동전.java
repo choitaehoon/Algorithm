@@ -18,7 +18,7 @@ public class 동전 {
 
             for (int z = 1; z <= givenMoney; ++z)
                 money[z] = Integer.parseInt(token.nextToken());
-ㅎ
+
             int reachMoney = Integer.parseInt(buffer.readLine());
             int[] dp = new int[reachMoney + 1];
             dp[0] = 1;
