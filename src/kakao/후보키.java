@@ -26,34 +26,13 @@ public class 후보키 {
             }
         }
 
-        Collections.sort(list, new Comparator<Integer>() {
-
-            public int compare(Integer a, Integer b) {
-                int x = countBits(a);
-                int y = countBits(b);
-
-                if (x > y) {
-                    return 1;
-                } else if (x < y) {
-                    return -1;
-                } else {
-                    return 0;
-                }
-            }
-        });
-
         System.out.println(list);
 
         while (list.size() != 0) {
             int n = list.remove(0);
             answer++;
 
-            for (Iterator<Integer> it = list.iterator(); it.hasNext();) {
-                int c = it.next();
-                if ((n & c) == n) {
-                    it.remove();
-                }
-            }
+            list.removeIf(c -> (n & c) == n);
         }
 
         return answer;
@@ -70,6 +49,7 @@ public class 후보키 {
                     if ((subset & 1 << k) == 0) {
                         continue;
                     }
+                    System.out.println(relation[y][k]+" "+relation[yy][k]+" "+relation[y][k].equals(relation[yy][k]));
                     if (!relation[y][k].equals(relation[yy][k])) {
                         isSame = false;
                         break;
@@ -83,18 +63,4 @@ public class 후보키 {
         return true;
     }
 
-    static int countBits(int n) {
-
-        int ret = 0;
-
-        while (n != 0) {
-            if ((n % 1) != 0) {
-                ret++;
-            }
-            n = n >> 1;
-        }
-        return ret;
-    }
-
 }
-
