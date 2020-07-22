@@ -47,7 +47,7 @@ public class 다트 {
                 } else if (bonusOption.charAt(k) == '*') {
                     num *= 2;
 
-                    if (i >= ㄷ1) {
+                    if (i >= 1) {
                         result[i - 1] *= 2;
                     }
 
