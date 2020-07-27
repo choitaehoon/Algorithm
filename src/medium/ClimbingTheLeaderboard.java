@@ -21,6 +21,8 @@ public class ClimbingTheLeaderboard {
                 resultScores.put(value, rank++);
         }
 
+        System.out.println(resultScores);
+        System.out.println(Arrays.toString(alice));
         NavigableSet<Integer> navigableSet = treeSet.descendingSet();
         int[] result = new int[alice.length];
         int index = 0;
@@ -30,8 +32,10 @@ public class ClimbingTheLeaderboard {
                 result[index++] = 1;
             else if (value < navigableSet.last())
                 result[index++] = resultScores.size() + 1;
-            else
+            else {
+                System.out.println(navigableSet.ceiling(value));
                 result[index++] = resultScores.get(navigableSet.ceiling(value));
+            }
         }
 
         return result;
