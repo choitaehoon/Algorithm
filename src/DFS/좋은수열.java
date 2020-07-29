@@ -7,6 +7,7 @@ import java.io.InputStreamReader;
 public class 좋은수열 {
 
     static int givenNumber;
+    static boolean isCheck = false;
 
     public static void main(String[] args) throws IOException {
         BufferedReader buffer = new BufferedReader(new InputStreamReader(System.in));
@@ -16,9 +17,13 @@ public class 좋은수열 {
     }
 
     private static void dfsNumber(int index, String word) {
+        if (isCheck)
+            return;
+
         if (index == givenNumber) {
             System.out.println(word);
-            System.exit(0);
+            isCheck = true;
+            return;
         }
 
         for (int i = 1; i <= 3; ++i) {
