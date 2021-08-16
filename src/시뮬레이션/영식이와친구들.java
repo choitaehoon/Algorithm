@@ -1,6 +1,5 @@
 package 시뮬레이션;
 
-import org.openqa.selenium.WebElement;
 
 import java.io.BufferedReader;
 import java.io.IOException;
