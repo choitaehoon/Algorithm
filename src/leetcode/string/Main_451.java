@@ -12,7 +12,7 @@ public class Main_451 {
         }
 
         List<Map.Entry<Character, Integer>> list = new ArrayList<>(map.entrySet());
-        Collections.sort(list, (o1, o2) -> o2.getValue() - o1.getValue());
+        list.sort((o1, o2) -> o2.getValue() - o1.getValue());
 
         StringBuilder builder = new StringBuilder();
         for (Map.Entry<Character, Integer> maps : list) {
@@ -29,4 +29,22 @@ public class Main_451 {
         return builder;
     }
 
+}
+
+class Word implements Comparator<Word> {
+    String text;
+    int len;
+    int order;
+
+    public Word(String text, int len, int order) {
+        this.text = text;
+        this.len = len;
+        this.order = order;
+    }
+
+
+    @Override
+    public int compare(Word o1, Word o2) {
+        return 0;
+    }
 }
