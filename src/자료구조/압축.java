@@ -24,11 +24,9 @@ public class 압축 {
                 cnt=0;
             }
             else if(c==')'){
-                int val = mul.peek();
-                mul.pop();
+                int val = mul.pop();
+                int plus = len.pop();
                 val*=cnt;
-                int plus = len.peek();
-                len.pop();
                 cnt = plus + val;
             }
             else  cnt++;     //숫자
