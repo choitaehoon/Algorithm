@@ -1,6 +1,7 @@
 package 큐;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.PriorityQueue;
 
 public class 디스크컨트롤러 {
@@ -16,7 +17,7 @@ public class 디스크컨트롤러 {
         int count = 0;// 처리된 디스크
         int now = 0;//작업이 끝난시간
 
-        Arrays.sort(jobs, ((o1, o2) -> o1[0]-o2[0]));
+        Arrays.sort(jobs, (Comparator.comparingInt(o -> o[0])));
 
         PriorityQueue<int[]> queue = new PriorityQueue<>(((o1, o2) -> o1[1] - o2[1]));
         int i = 0;
